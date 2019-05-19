@@ -1,0 +1,39 @@
+File Format:
+
+TITLE:
+Title of song.
+
+SONGID:
+ID of song.
+
+OFFSET:
+The amount of milliseconds to increase/decrease the entire note timeline by for syncing purposes.
+
+BPM:
+The beats per minute this song plays at.
+
+NOTETYPE:
+1 - Tap Note
+2 - Slide note 1 begin
+3 - Slide note 1 end
+4 - Slide note 2 begin
+5 - Slide note 2 end
+6 - Flick note
+
+NOTEDATA
+-For slide notes, this denotes which lane the note is in.
+Lane 1 = 1, Lane 2 = 2, etc. 7 lanes total
+
+TIMING
+Timing will be number of milliseconds after the song started.
+
+
+<FILE START>
+TITLE
+SONGID
+OFFSET
+BPM
+NOTETYPE,NOTEDATA,TIMING
+
+
+Career Assistance Advisor

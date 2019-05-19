@@ -1,0 +1,15 @@
+vertex_format_begin();
+vertex_format_add_position_3d();
+vertex_format_add_normal();
+vertex_format_add_color();
+vertex_format_add_texcoord();
+format = vertex_format_end();
+vert = vertex_create_buffer();
+vertex_begin(vert, format);
+vertex_point_add(vert, -64, -64, 0,0,0,-1, c_white, 1,0,0);
+vertex_point_add(vert, -64, 64, 0,0,0,-1, c_white, 1,0,1);
+vertex_point_add(vert, 64, -64, 0,0,0,-1, c_white, 1,1,0);
+vertex_point_add(vert, -64, 64, 0,0,0,-1, c_white, 1,0,1);
+vertex_point_add(vert, 64, -64, 0,0,0,-1, c_white, 1,1,0);
+vertex_point_add(vert, 64, 64, 0,0,0,-1, c_white, 1,1,1);
+vertex_end(vert);
