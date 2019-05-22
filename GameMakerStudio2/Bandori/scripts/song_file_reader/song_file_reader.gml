@@ -15,21 +15,24 @@ global.SONG_title = file_text_read_string(global.SONG_file);
 global.SONG_songid = file_text_read_real(global.SONG_file);
 global.SONG_offset = file_text_read_string(global.SONG_file);
 global.SONG_bpm = file_text_read_real(global.SONG_file);
-if (timeline_exists(global.SONG_timeline)) {
+if (global.SONG_timeline!=-1 && timeline_exists(global.SONG_timeline)) {
 	timeline_clear(global.SONG_timeline);
 }
 global.SONG_timeline = timeline_add();
 var i=0;
 while (!file_text_eof(global.SONG_file)) {
 	global.SONG_note[i]=file_text_read_string(global.SONG_file);
-	str1 = string_copy(global.SONG_note[i],0,string_pos(",",global.SONG_note[i]));
-	temp1 = string_copy(global.SONG_note[i],string_pos(",",global.SONG_note[i]),string_length(global.SONG_note[i])-string_pos(",",global.SONG_note[i]));
-	str2 = string_copy(str1,0,string_pos(",",str1));
-	temp2 = string_copy(str1,string_pos(",",str1),string_length(str1)-string_pos(",",str1));
-	str3 = string_copy(str2,0,string_pos(",",str2));
-	note = instance_create_layer(0,0,playfield,music_note)
-	note.val1=number(str1);
-	note.val2=number(str2);
-	note.val3=number(str3);
+	if (string_count(",",global.SONG_note[i])==3) {
+		str1 = string_copy(global.SONG_note[i],0,string_pos(",",global.SONG_note[i]));
+		temp1 = string_copy(global.SONG_note[i],string_pos(",",global.SONG_note[i]),string_length(global.SONG_note[i])-string_pos(",",global.SONG_note[i]));
+		str2 = string_copy(str1,0,string_pos(",",str1));
+		temp2 = string_copy(str1,string_pos(",",str1),string_length(str1)-string_pos(",",str1));
+		str3 = string_copy(str2,0,string_pos(",",str2));
+		note = instance_create_layer(0,0,playfield,music_note)
+		note.val1=real(str1);
+		note.val2=real(str2);
+		note.val3=real(str3);
+	}
 	i+=1;
+	file_text_readln(global.SONG_file);
 }

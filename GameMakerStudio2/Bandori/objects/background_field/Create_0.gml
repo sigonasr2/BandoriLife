@@ -53,4 +53,6 @@ BEATS_PER_SECOND = global.music_bpm/60
 TIME_BETWEEN_BEAT = 1/BEATS_PER_SECOND
 FLICKER_TIME = 0
 
-FLICKER_OFFSET = 0 //Amount of time in seconds to offset the flicker. Set with END key in EDIT MODE.
+FLICKER_OFFSET = 0.5 //Amount of time in seconds to offset the flicker. Set with END key in EDIT MODE.
+
+LAST_BEAT += FLICKER_OFFSET

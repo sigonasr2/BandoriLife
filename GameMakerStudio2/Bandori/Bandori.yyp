@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "dc814062-491a-4f3d-9968-41c49ec0a64a",
+            "Value": {
+                "id": "aae0bed1-70e7-492f-8288-ef4ce564eb81",
+                "resourcePath": "datafiles_yy\\TestSongFormat.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "e1b8208f-ed03-4442-8be3-eed205abd614",
             "Value": {
                 "id": "37fe9f92-13e3-4f03-8c79-b999b7403a82",

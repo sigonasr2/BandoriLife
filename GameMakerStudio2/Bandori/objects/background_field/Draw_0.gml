@@ -22,6 +22,9 @@ for (i=0;i<ds_list_size(lane1);i+=1) {
 STEP_COUNTER+=NOTE_SPACING
 
 if (FLICKER_TIME<20) {
-	draw_rectangle(5,5,37,37,false)	
+	draw_rectangle(global.PLAYFIELD_WIDTH/2-BOTTOM_LANE_WIDTH*3,
+	BOTTOM_LANE_Y,
+	global.PLAYFIELD_WIDTH/2+BOTTOM_LANE_WIDTH*3,
+	BOTTOM_LANE_Y+12,false)	
 	FLICKER_TIME+=1
 }
