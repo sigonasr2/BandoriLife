@@ -22,7 +22,14 @@ global.SONG_timeline = timeline_add();
 var i=0;
 while (!file_text_eof(global.SONG_file)) {
 	global.SONG_note[i]=file_text_read_string(global.SONG_file);
-	
-	str1 = string_copy(global.SONG_note[i],string_pos(",",global.SONG_note[i]),string_length(global.SONG_note[i])-string_pos(",",global.SONG_note[i]));
+	str1 = string_copy(global.SONG_note[i],0,string_pos(",",global.SONG_note[i]));
+	temp1 = string_copy(global.SONG_note[i],string_pos(",",global.SONG_note[i]),string_length(global.SONG_note[i])-string_pos(",",global.SONG_note[i]));
+	str2 = string_copy(str1,0,string_pos(",",str1));
+	temp2 = string_copy(str1,string_pos(",",str1),string_length(str1)-string_pos(",",str1));
+	str3 = string_copy(str2,0,string_pos(",",str2));
+	note = instance_create_layer(0,0,playfield,music_note)
+	note.val1=number(str1);
+	note.val2=number(str2);
+	note.val3=number(str3);
 	i+=1;
 }
