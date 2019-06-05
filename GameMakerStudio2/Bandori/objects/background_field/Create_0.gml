@@ -19,23 +19,23 @@ MAX_DARKNESS=0.6
 NOTE_SPACING=4.5
 STEP_COUNTER=0
 
-lane0 = ds_list_create();
+/*lane0 = ds_list_create();
 lane1 = ds_list_create();
 lane2 = ds_list_create();
 lane3 = ds_list_create();
 lane4 = ds_list_create();
 lane5 = ds_list_create();
-lane6 = ds_list_create();
+lane6 = ds_list_create();*/
 
 PREVIOUS_Y=0
 
-for (i=1;i<30;i+=1) {
+/*for (i=1;i<30;i+=1) {
 	ds_list_add(lane0,140*i)
 }
 
 for (i=1;i<30;i+=1) {
 	ds_list_add(lane1,210*i)
-}
+}*/
 
 camera = camera_create();
 
