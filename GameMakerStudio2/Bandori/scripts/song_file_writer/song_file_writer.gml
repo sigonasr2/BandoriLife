@@ -1,6 +1,6 @@
-///	@function song_file_reader(filename)
-///	@description Reads a song file and creates the appropriate playfield for the song.
-///	@param filename The file to read from.
+///	@function song_file_writer(filename)
+///	@description Writes data to a song file.
+///	@param filename The file to write to.
 
 /*<FILE START>
 TITLE
