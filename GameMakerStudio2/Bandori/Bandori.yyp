@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "246b6677-8b24-4947-9115-36b8d4fc01e8",
+            "Value": {
+                "id": "2c0b2a82-5031-41a0-9848-355fad95281c",
+                "resourcePath": "views\\246b6677-8b24-4947-9115-36b8d4fc01e8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "292c43b1-1f73-4bf1-a374-f7335d04df3f",
             "Value": {
                 "id": "b4512f41-0300-49ee-9652-e657beb1f30a",
@@ -100,6 +108,14 @@
                 "id": "fa7f384f-a0fa-4e28-a769-2c1207c2a3ba",
                 "resourcePath": "views\\36bfd8ea-f453-4564-a89b-f9f5ef6769b5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "375a746a-804f-4301-8d8e-7ce40f231c36",
+            "Value": {
+                "id": "b22375ab-2b5a-4978-9f37-dd7824dbb249",
+                "resourcePath": "datafiles_yy\\songdata\\Sekaiwa_Koini_Ochiteru.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -171,6 +187,14 @@
             "Value": {
                 "id": "f0069acf-73c4-43a1-a8da-a5ed0090034e",
                 "resourcePath": "scripts\\camera_update\\camera_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "57fd057a-79d6-4298-a8d5-807f353ec3b9",
+            "Value": {
+                "id": "3c26574d-d36d-46c7-80bc-b0dd47b8dcbc",
+                "resourcePath": "scripts\\song_file_writer\\song_file_writer.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -366,7 +390,8 @@
         "9b3969f3-bd44-47ed-9b48-f6c85ded7082",
         "c0e356fa-e36a-4477-973a-556032ed0262",
         "d47c7e44-37b2-454b-abcd-743c1820603b",
-        "008b1512-eed6-4d5f-9207-e064882a4844"
+        "008b1512-eed6-4d5f-9207-e064882a4844",
+        "57fd057a-79d6-4298-a8d5-807f353ec3b9"
     ],
     "tutorial": ""
 }

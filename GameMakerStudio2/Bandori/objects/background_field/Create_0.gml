@@ -56,3 +56,6 @@ FLICKER_TIME = 0
 FLICKER_OFFSET = 0.5 //Amount of time in seconds to offset the flicker. Set with END key in EDIT MODE.
 
 LAST_BEAT += FLICKER_OFFSET
+
+saveactions = "F3 - Save new data."
+debugtxt = ""

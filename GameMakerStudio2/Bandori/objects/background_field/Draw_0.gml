@@ -33,4 +33,8 @@ if (global.mode==1) {
 	draw_set_color(c_white)
 	draw_text(camera_get_view_x(view_camera[0]),0,string(TIME_BETWEEN_BEAT))
 	draw_text(camera_get_view_x(view_camera[0]),16,string(LAST_BEAT%TIME_BETWEEN_BEAT))
+	draw_set_halign(fa_right)
+	draw_text(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]),0,saveactions)
+	draw_text(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]),string_height(debugtxt),debugtxt)
+	draw_set_halign(fa_left)
 }
